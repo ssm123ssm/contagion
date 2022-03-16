@@ -1,4 +1,8 @@
 
+# contagion
+
+[![DOI](https://zenodo.org/badge/425392234.svg)](https://zenodo.org/badge/latestdoi/425392234)
+
 **Data description**
 
 The file entitled &#39;modular.Rmd&#39; contains the source code. The secondary data can be found in the &#39;Data&#39; folder. Within the folder, &#39;all.csv&#39; contains all the COVID-19 incidence data publicly available in Our World in Data. The file &#39;state-abbrevs.csv&#39;, &#39;state-areas.csv&#39; and &#39;state-population.csv&#39; include the abbreviations of the states of the USA, their areas and their population respectively.
