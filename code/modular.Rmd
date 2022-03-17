@@ -486,9 +486,9 @@ qurantine <- function(tab, inf, efficacy) {
 
 
 ```{r message=FALSE, warning=FALSE}
-abv <- read_csv("data/state-abbrevs.csv")
-areas <- read_csv("data/state-areas.csv")
-population <- read_csv("data/state-population.csv")
+abv <- read_csv("../data/state-abbrevs.csv")
+areas <- read_csv("../data/state-areas.csv")
+population <- read_csv("../data/state-population.csv")
 
 pop <- population %>% filter(ages == 'total', year == 2012) %>% rename(abbreviation = "state/region")
 
@@ -559,7 +559,7 @@ len = 80
 Predictions for Sri Lanka
 
 ```{r message=FALSE, warning=FALSE}
-all <- read_csv("data/all.csv")
+all <- read_csv("../data/all.csv")
 sl <- all %>% filter(location == 'Sri Lanka') %>% dplyr::select(date,total_cases,new_cases_smoothed,people_vaccinated_per_hundred,stringency_index,population,population_density)
 ```
 
