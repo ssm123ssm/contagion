@@ -10,7 +10,7 @@ library(tidyverse)
 library(gridExtra)
 library(gganimate)
 library(R0)
-library(magick)
+#library(magick)
 library(scales)
 library(pbapply)
 library(gifski)
@@ -452,9 +452,9 @@ anim <- function(nm = 'def', fps = 10, frames = 100, cp = FALSE, dark = FALSE) {
     geom_point(show.legend = FALSE) + 
     transition_reveal(day)
   
-  animate(pp, fps = fps, nframes = frames,renderer = gifski_renderer(paste0(nm, "_pp.gif")), height = 520, width = 520, res = 100)
+  animate(pp, fps = fps, nframes = frames,renderer = gifski_renderer(paste0('../results/', paste0(nm, "_pp.gif"))), height = 520, width = 520, res = 100)
   if(cp){
-    animate(c_p, fps = fps, nframes = frames,renderer = gifski_renderer(paste0(nm, "_cp.gif")), height = 520, width = 520, res = 100)
+    animate(c_p, fps = fps, nframes = frames,renderer = gifski_renderer(paste0('../results/',paste0(nm, "_cp.gif"))), height = 520, width = 520, res = 100)
   }
   
 }
